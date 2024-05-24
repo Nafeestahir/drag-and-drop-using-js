@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+
+    <title>Document</title>
+    <style>
+        .list {
+            border: 3px solid black;
+            padding: 34px;
+            width: 250px;
+            margin: 5px;
+            background-color: red;
+            color: white;
+            font-size: 27px;
+            color: black;
+            font-weight: 600;
+        }
+
+        .maindiv {
+            display: flex;
+            justify-content: center;
+        }
+
+        #right,
+        #left {
+            border: 5px solid black;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 10px;
+        }
+
+        .list {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="InputVal" type="number" style="margin: 34px;" value="15">
+    <button id="btn">submit</button>
+    <div class="maindiv">
+        <div id="left" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+        </div>
+        <div id="right" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
